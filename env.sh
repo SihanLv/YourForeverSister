@@ -1,0 +1,10 @@
+export MODEL_URL="https://api.siliconflow.cn/v1"
+export MODEL_NAME="THUDM/GLM-4-9B-0414"
+export MODEL_KEY=""
+export IMG_MODEL_NAME="Kwai-Kolors/Kolors"
+export SMTP_SERVER="smtp.qq.com"
+export SMTP_PORT=465
+export SMTP_EMAIL="yourforeversister@qq.com"
+export SMTP_KEY=""
+export CALENDAR_API_URL=""
+export CALENDAR_API_KEY=""

@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+openai
+requests
+lunar_python
+email-validator
