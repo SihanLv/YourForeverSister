@@ -1,3 +1,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/SihanLv/YourForeverSister-frontend
+[submodule "docs"]
+	path = docs
+	url = https://github.com/SihanLv/YourForeverSister-frontend
