@@ -66,7 +66,7 @@ def get_today_holiday():
                     if not line:
                         continue
                     parts = line.split(",")
-                    if len(parts) >= 2 and parts[0] == _date_str(d):
+                    if len(parts) >= 2 and parts[0] == _date_str(d)[5:]:
                         return {"name": parts[1]}
         return None
     try:
@@ -124,7 +124,7 @@ def get_upcoming_events(days=7):
                     if len(parts) >= 2:
                         out.append({"date": parts[0], "name": parts[1]})
             upcoming = set(
-                _date_str(_today() + datetime.timedelta(days=i))
+                _date_str(_today() + datetime.timedelta(days=i))[5:]
                 for i in range(1, days + 1)
             )
             return [x for x in out if x["date"] in upcoming]
