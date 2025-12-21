@@ -91,7 +91,7 @@ def get_today_holiday():
 
 def get_upcoming_events(days=7):
     res = []
-    for i in range(1, days + 1):
+    for i in range(days):
         d = _today() + datetime.timedelta(days=i)
         s = Solar.fromYmd(d.year, d.month, d.day)
         lunar = s.getLunar()
